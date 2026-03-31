@@ -39,3 +39,5 @@ if ingredients_list:
     #st.stop()
     
     time_to_insert = st.button('Submit Order')
+
+    st.success('Your smoothie is ordered!', icon='✅')
