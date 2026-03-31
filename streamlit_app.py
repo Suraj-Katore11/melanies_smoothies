@@ -41,3 +41,8 @@ if ingredients_list:
     time_to_insert = st.button('Submit Order')
 
     st.success('Your smoothie is ordered!', icon='✅')
+
+#New section to display smoothiefront nutrition information
+import requests  
+smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+st.text(smoothiefroot_response)
