@@ -45,7 +45,7 @@ if ingredients_list:
     # ✅ Bug 3 Fixed: insert executes only on button click
     if time_to_insert:
         session.sql(my_insert_stmt).collect()
-        st.success('Your smoothie is ordered!', icon='✅')
+        st.success('Your smoothie is ordered, {name_on_order}!' icon='✅')
  
 
 
