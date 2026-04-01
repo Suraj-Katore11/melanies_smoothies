@@ -33,8 +33,8 @@ if ingredients_list:
 
         st.subheader(fruit_chosen + ' Nutrition Information')
         # ✅ Bug 1 Fixed: f-string added
-        smoothiefroot_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{search_on}")
-        st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+        smoothiefroot_response = requests.get(f"https://fruityvice.com/api/fruit/{search_on}")
+        sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
     # ✅ Bug 2 Fixed: both columns declared in INSERT
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order)
